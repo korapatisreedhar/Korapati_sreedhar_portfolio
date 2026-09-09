@@ -72,4 +72,3 @@ SQLite is perfect for local development. On many cloud hosts, local filesystem s
 Update `PROFILE`, `SKILLS`, `PROJECTS`, `EDUCATION`, and `CERTIFICATIONS` in `app.py`.
 
 Do not add claims, metrics, project URLs, or technologies that are not actually on your resume/experience.
-"# Korapati_sreedhar_portfolio" 
