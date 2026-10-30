@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        const fill = entry.target.querySelector(".progress-fill");
-        if (fill) fill.style.width = fill.dataset.width;
         observer.unobserve(entry.target);
       }
     });

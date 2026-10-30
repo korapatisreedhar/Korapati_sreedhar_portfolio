@@ -8,6 +8,7 @@
   <meta name="author" content="Korapati Sreedhar">
   <title>Korapati Sreedhar | Software Engineer | Python & Flask Developer</title>
 
+  <link rel="icon" type="image/svg+xml" href="static/img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -20,6 +21,14 @@
 <div class="bg-grid"></div>
 <div class="orb orb-one"></div>
 <div class="orb orb-two"></div>
+<div class="solar-system" aria-hidden="true">
+  <div class="sun"></div>
+  <div class="orbit orbit-one"><span class="orbit-planet planet-one"></span></div>
+  <div class="orbit orbit-two"><span class="orbit-planet planet-two"></span></div>
+  <div class="orbit orbit-three"><span class="orbit-planet planet-three"></span></div>
+  <div class="orbit orbit-four"><span class="orbit-planet planet-four"></span></div>
+  <div class="orbit orbit-five"><span class="orbit-planet planet-five"></span></div>
+</div>
 
 <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
   <div class="container">
@@ -50,32 +59,18 @@
         <p class="hero-copy">Building production-style backend systems and full-stack web applications. My focus is clean backend architecture, REST APIs, databases, authentication and practical AI/ML applications.</p>
         <div class="d-flex flex-wrap gap-3">
           <a class="btn btn-primary btn-lg px-4" href="#projects">Explore My Work <i class="bi bi-arrow-down-right"></i></a>
-          <a class="btn btn-outline-light btn-lg px-4" href="resume.pdf" target="_blank">View Resume <i class="bi bi-file-earmark-pdf"></i></a>
+          <a class="btn btn-outline-light btn-lg px-4" href="/download-cv">Download CV <i class="bi bi-download"></i></a>
           <a class="btn btn-outline-light btn-lg px-4" href="#contact">Let's Connect</a>
         </div>
         <div class="social-row mt-4">
           <a href="https://github.com/korapatisreedhar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/sreedhar-korapati-77a0b024a" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sreedhar-korapati-77a0b024a" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> View LinkedIn</a>
           <a href="mailto:korapatisreedhar9999@gmail.com"><i class="bi bi-envelope"></i> Email</a>
         </div>
       </div>
       <div class="col-lg-5 reveal">
         <div class="hero-card">
-          <div class="code-window">
-            <div class="window-bar"><span></span><span></span><span></span><small>portfolio.py</small></div>
-            <pre><code><span class="kw">class</span> <span class="name">SoftwareEngineer</span>:
-    <span class="kw">def</span> <span class="fn">__init__</span>(self):
-        self.stack = [
-            <span class="str">"Python"</span>,
-            <span class="str">"Flask"</span>,
-            <span class="str">"SQL"</span>,
-            <span class="str">"REST APIs"</span>
-        ]
-        self.mindset = <span class="str">"Build. Learn. Improve."</span>
-
-    <span class="kw">def</span> <span class="fn">ship</span>(self):
-        <span class="kw">return</span> <span class="str">"production-ready"</span></code></pre>
-          </div>
+          <img class="hero-illustration" src="static/img/engineering-illustration.svg" alt="Illustration of a software engineer's workstation with code, data, and connected systems">
           <div class="floating-stat stat-one"><strong>2</strong><span>Full-stack projects</span></div>
           <div class="floating-stat stat-two"><strong>6</strong><span>Month internship</span></div>
         </div>
@@ -114,65 +109,29 @@
       </div>
       <div class="col-lg-7">
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Python</span><small>Programming</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="95%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Python</span><small>Programming</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Flask</span><small>Backend</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="92%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Flask</span><small>Backend</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>REST APIs</span><small>Backend</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>REST APIs</span><small>Backend</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>SQL</span><small>Database</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>SQL</span><small>Database</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Java</span><small>Programming</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="78%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Java</span><small>Programming</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>JavaScript</span><small>Frontend</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="76%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>JavaScript</span><small>Frontend</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>HTML5 / CSS3</span><small>Frontend</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>HTML5 / CSS3</span><small>Frontend</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Bootstrap</span><small>Frontend</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Bootstrap</span><small>Frontend</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>MySQL / SQLite</span><small>Database</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>MySQL / SQLite</span><small>Database</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Git</span><small>Tools</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="84%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Git</span><small>Tools</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>AWS Fundamentals</span><small>Cloud</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="75%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>AWS Fundamentals</span><small>Cloud</small></div>
         
-        <div class="skill-item reveal">
-          <div class="d-flex justify-content-between"><span>Machine Learning</span><small>AI / ML</small></div>
-          <div class="progress-track"><div class="progress-fill" data-width="72%"></div></div>
-        </div>
+        <div class="skill-item reveal"><span>Machine Learning</span><small>AI / ML</small></div>
         
       </div>
     </div>
@@ -300,29 +259,16 @@
 <section id="contact" class="section-pad contact-section">
   <div class="container">
     <div class="section-label">05 / CONTACT</div>
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5 reveal">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 reveal">
         <h2>Have an opportunity? <span class="gradient-text">Let's talk.</span></h2>
         <p class="muted">I'm interested in software engineering, Python/Flask backend and full-stack opportunities.</p>
         <div class="contact-links">
           <a href="mailto:korapatisreedhar9999@gmail.com"><i class="bi bi-envelope"></i><span>korapatisreedhar9999@gmail.com</span></a>
           <a href="tel:+91 9346668551"><i class="bi bi-phone"></i><span>+91 9346668551</span></a>
-          <a href="https://linkedin.com/in/sreedhar-korapati" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><span>linkedin.com/in/sreedhar-korapati</span></a>
+          <a href="https://www.linkedin.com/in/sreedhar-korapati-77a0b024a" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><span>View LinkedIn profile</span></a>
           <a href="https://github.com/korapatisreedhar" target="_blank" rel="noopener"><i class="bi bi-github"></i><span>github.com/korapatisreedhar</span></a>
         </div>
-      </div>
-      <div class="col-lg-7 reveal">
-        
-          
-        
-        <form class="contact-form" method="POST" action="#">
-          <input type="hidden" name="form-name" value="contact"><p class="d-none"><label>Do not fill this out: <input name="bot-field"></label></p><div class="row g-3">
-            <div class="col-md-6"><label>Name</label><input name="name" type="text" placeholder="Your name" required maxlength="120"></div>
-            <div class="col-md-6"><label>Email</label><input name="email" type="email" placeholder="you@example.com" required maxlength="160"></div>
-            <div class="col-12"><label>Message</label><textarea name="message" rows="6" placeholder="Tell me about the opportunity..." required></textarea></div>
-            <div class="col-12"><button class="btn btn-primary btn-lg px-4" type="submit">Send Message <i class="bi bi-send"></i></button></div>
-          </div>
-        </form>
       </div>
     </div>
   </div>

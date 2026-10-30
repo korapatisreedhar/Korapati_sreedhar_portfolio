@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
+from flask import Flask, render_template, request, jsonify, redirect, url_for, flash, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from pathlib import Path
 from datetime import datetime
@@ -31,7 +31,7 @@ PROFILE = {
     "email": "korapatisreedhar9999@gmail.com",
     "phone": "+91 9346668551",
     "github": "https://github.com/korapatisreedhar",
-    "linkedin": "https://linkedin.com/in/sreedhar-korapati",
+    "linkedin": "https://www.linkedin.com/in/sreedhar-korapati-77a0b024a",
     "summary": (
         "Software Engineer with a B.Tech in Artificial Intelligence & Data Science, "
         "AWS Academy training in Cloud Foundations and Generative AI Foundations, and a "
@@ -42,18 +42,18 @@ PROFILE = {
 }
 
 SKILLS = [
-    ("Python", "Programming", "95"),
-    ("Flask", "Backend", "92"),
-    ("REST APIs", "Backend", "90"),
-    ("SQL", "Database", "88"),
-    ("Java", "Programming", "78"),
-    ("JavaScript", "Frontend", "76"),
-    ("HTML5 / CSS3", "Frontend", "90"),
-    ("Bootstrap", "Frontend", "88"),
-    ("MySQL / SQLite", "Database", "88"),
-    ("Git", "Tools", "84"),
-    ("AWS Fundamentals", "Cloud", "75"),
-    ("Machine Learning", "AI / ML", "72"),
+    ("Python", "Programming"),
+    ("Flask", "Backend"),
+    ("REST APIs", "Backend"),
+    ("SQL", "Database"),
+    ("Java", "Programming"),
+    ("JavaScript", "Frontend"),
+    ("HTML5 / CSS3", "Frontend"),
+    ("Bootstrap", "Frontend"),
+    ("MySQL / SQLite", "Database"),
+    ("Git", "Tools"),
+    ("AWS Fundamentals", "Cloud"),
+    ("Machine Learning", "AI / ML"),
 ]
 
 PROJECTS = [
@@ -107,6 +107,20 @@ def home():
         projects=PROJECTS,
         education=EDUCATION,
         certifications=CERTIFICATIONS,
+    )
+
+@app.get("/resume")
+def view_resume():
+    return send_from_directory(BASE_DIR, "resume.pdf", mimetype="application/pdf")
+
+@app.get("/download-cv")
+def download_cv():
+    return send_from_directory(
+        BASE_DIR,
+        "resume.pdf",
+        mimetype="application/pdf",
+        as_attachment=True,
+        download_name="Korapati-Sreedhar-CV.pdf",
     )
 
 @app.post("/contact")
